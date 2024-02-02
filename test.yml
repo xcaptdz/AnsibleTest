@@ -1,1 +1,9 @@
-
+---
+- hosts: all
+  become: true
+ 
+  tasks:
+    - name: APT Packager updated 
+      apt:
+        upgrade: yes
+        update_cahe: yes
